@@ -54,3 +54,18 @@ else:
 
   print(bool(x))
   print(bool(y))
+
+
+#class
+
+class myclass():
+  def __len__(self):
+    return 0
+
+myobj = myclass()
+print(bool(myobj))
+
+
+
+r = 200.1
+print(isinstance(r, int))
