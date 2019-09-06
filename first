@@ -55,7 +55,6 @@ else:
   print(bool(x))
   print(bool(y))
 
-
 #class
 
 class myclass():
