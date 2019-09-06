@@ -36,7 +36,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-sql = "INSERT INTO test (Field, timnestamp) VALUES (%s, %s)"
+sql = "INSERT INTO test (Field, timestamp) VALUES (%s, %s)"
 val = ("2", "21")
 mycursor.execute(sql, val)
 
