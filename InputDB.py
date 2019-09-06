@@ -25,7 +25,7 @@
 
 
 
-import 
+import config
 
 mycursor = mydb.cursor()
 
