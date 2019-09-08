@@ -24,8 +24,17 @@
 # ?>
 
 
+import mysql.connector
 
-import config
+mydb = mysql.connector.connect(
+  host="s34.linuxpl.com",
+  user="arekh_mqtt",
+  passwd="Lublewo@12",
+  database="arekh_mqtt"
+)
+
+
+#import config
 
 mycursor = mydb.cursor()
 
