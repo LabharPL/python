@@ -36,15 +36,29 @@ mydb = mysql.connector.connect(
 
 #import config
 
+# mycursor = mydb.cursor()
+#
+# sql = "INSERT INTO test (Field, timestamp) VALUES (%s, %s)"
+# val = ("2", "21")
+# mycursor.execute(sql, val)
+#
+# mydb.commit()
+#
+# print(mycursor.rowcount, "record inserted.")
+
+
+
+
 mycursor = mydb.cursor()
 
-sql = "INSERT INTO test (Field, timestamp) VALUES (%s, %s)"
-val = ("2", "21")
-mycursor.execute(sql, val)
+sql = "DELETE FROM test WHERE Field = '2'"
+
+mycursor.execute(sql)
 
 mydb.commit()
 
-print(mycursor.rowcount, "record inserted.")
+print(mycursor.rowcount, "record(s) deleted")
+
 
 
 mycursorread = mydb.cursor()
