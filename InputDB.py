@@ -45,3 +45,13 @@ mycursor.execute(sql, val)
 mydb.commit()
 
 print(mycursor.rowcount, "record inserted.")
+
+
+mycursorread = mydb.cursor()
+
+mycursorread.execute("SELECT * FROM test")
+
+myresult = mycursorread.fetchall()
+
+for x in myresult:
+  print (x)
