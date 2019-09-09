@@ -57,3 +57,7 @@ def tri_recursion(k):
 
 print("\n\nRecursion Example Results")
 tri_recursion(646)
+
+
+x = lambda a, b, c : a * b * c
+print(x(5, 6, 2))
