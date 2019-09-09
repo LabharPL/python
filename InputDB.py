@@ -46,6 +46,8 @@ mydb = mysql.connector.connect(
 #
 # print(mycursor.rowcount, "record inserted.")
 
+
+
 mycursor = mydb.cursor()
 
 sql = "DELETE FROM test WHERE Field = '2'"
