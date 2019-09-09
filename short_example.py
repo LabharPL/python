@@ -45,7 +45,7 @@ def my_function(child3, child2, child1):
 
 my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linusek")
 
-
+ 
 
 def tri_recursion(k):
   if(k>0):
