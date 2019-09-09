@@ -50,15 +50,15 @@ mydb = mysql.connector.connect(
 # nowe
 
 
-mycursor = mydb.cursor()
+# mycursor = mydb.cursor()
+#
+# sql = "DELETE FROM test WHERE Field = '2'"
+#
+# mycursor.execute(sql)
+#
+# mydb.commit()
 
-sql = "DELETE FROM test WHERE Field = '2'"
-
-mycursor.execute(sql)
-
-mydb.commit()
-
-print(mycursor.rowcount, "record(s) deleted")
+#print(mycursor.rowcount, "record(s) deleted")
 
 mycursorread = mydb.cursor()
 
@@ -68,3 +68,38 @@ myresult = mycursorread.fetchall()
 
 for x in myresult:
   print (x)
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist)
+thislist[1] = "blackcurrant"
+print(thislist)
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+
+a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+
+a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+
+
+a = 2
+b = 330
+
+print("A") if a > b else print("B")
