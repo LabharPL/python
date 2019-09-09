@@ -50,15 +50,15 @@ mydb = mysql.connector.connect(
 # nowe
 
 
-mycursor = mydb.cursor()
+# mycursor = mydb.cursor()
+#
+# sql = "DELETE FROM test WHERE Field = '2'"
+#
+# mycursor.execute(sql)
+#
+# mydb.commit()
 
-sql = "DELETE FROM test WHERE Field = '2'"
-
-mycursor.execute(sql)
-
-mydb.commit()
-
-print(mycursor.rowcount, "record(s) deleted")
+#print(mycursor.rowcount, "record(s) deleted")
 
 mycursorread = mydb.cursor()
 
@@ -68,3 +68,17 @@ myresult = mycursorread.fetchall()
 
 for x in myresult:
   print (x)
+
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist)
+
+print(thislist[2:5])
+thislist[1] = "blackcurrant"
+print(thislist)
+
+print(thislist[-2])
+
+print(thislist[-4:-1])
+
+hisset = {"apple", "banana", "cherry"}
+print(thisset)
