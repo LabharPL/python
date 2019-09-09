@@ -47,6 +47,8 @@ mydb = mysql.connector.connect(
 # print(mycursor.rowcount, "record inserted.")
 
 
+# nowe
+
 
 mycursor = mydb.cursor()
 
