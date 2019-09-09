@@ -71,14 +71,35 @@ for x in myresult:
 
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 print(thislist)
-
-print(thislist[2:5])
 thislist[1] = "blackcurrant"
 print(thislist)
-
-print(thislist[-2])
-
-print(thislist[-4:-1])
-
-hisset = {"apple", "banana", "cherry"}
+thisset = {"apple", "banana", "cherry"}
 print(thisset)
+
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+
+a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+
+a = 200
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+
+
+a = 2
+b = 330
+
+print("A") if a > b else print("B")
