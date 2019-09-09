@@ -56,8 +56,6 @@ mydb.commit()
 
 print(mycursor.rowcount, "record(s) deleted")
 
-
-
 mycursorread = mydb.cursor()
 
 mycursorread.execute("SELECT * FROM test")
