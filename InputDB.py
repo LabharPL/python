@@ -103,3 +103,7 @@ else:
 # b = 330
 #
 # print("A") if a > b else print("B")
+
+cars = ["Ford", "Volvo", "BMW"]
+
+print(cars)
