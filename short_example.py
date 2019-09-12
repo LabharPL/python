@@ -141,5 +141,7 @@ print(x,'  platform.uname')
 
 x = dir(platform)
 print(x)
-
+y = locals()
+print('wyswietlowne locals',y)
+print('   ')
 print('____________________________KONIEC________________________')
