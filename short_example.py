@@ -82,3 +82,59 @@ import ah1
 
 a = ah1.person1["age"]
 print(a)
+
+
+import platform
+
+x = platform.system()
+print(x)
+
+platform.architecture()
+# returns information about the bit architecture
+print(x)
+
+x=platform.machine()
+# returns the machine type, e.g. 'i386'.
+print(x)
+
+x=platform.node()
+print(x)
+
+x=platform.platform()
+# returns a single string identifying the underlying platform with as much useful
+# information as possible.
+print(x)
+
+x=platform.processor()
+# returns the (real) processor name, e.g. 'amdk6'.
+print(x)
+
+x=platform.python_build()
+# returns a tuple (buildno, builddate) stating the Python build number and
+# date as strings.
+print(x)
+
+x=platform.python_compiler()
+# returns a string identifying the compiler used for compiling Python.
+print(x)
+
+x=platform.python_version()
+# returns the Python version as string 'major.minor.patchlevel'
+print(x)
+
+x=platform.python_implementation()
+# returns a string identifying the Python implementation.
+print(x)
+
+x=platform.release()
+print(x)
+
+x=platform.system()
+# returns the system/OS name, e.g. 'Linux', 'Windows', or 'Java'.
+print(x)
+
+x=platform.version()
+print(x)
+
+x=platform.uname()
+print(x)
