@@ -87,54 +87,61 @@ print(a)
 import platform
 
 x = platform.system()
-print(x)
+print(x, '  platform.system')
 
 platform.architecture()
 # returns information about the bit architecture
-print(x)
+print(x, '  platform.architecture')
 
 x=platform.machine()
 # returns the machine type, e.g. 'i386'.
-print(x)
+print(x, "  platform.machine")
 
 x=platform.node()
-print(x)
+print(x, '  platform.node')
 
 x=platform.platform()
 # returns a single string identifying the underlying platform with as much useful
 # information as possible.
-print(x)
+print(x, '  platform.platform')
 
 x=platform.processor()
 # returns the (real) processor name, e.g. 'amdk6'.
-print(x)
+print(x, '  platform.processor')
 
 x=platform.python_build()
 # returns a tuple (buildno, builddate) stating the Python build number and
 # date as strings.
-print(x)
+print(x, '  platform.python_build')
 
 x=platform.python_compiler()
 # returns a string identifying the compiler used for compiling Python.
-print(x)
+print(x, '  platform.python_compiler')
 
 x=platform.python_version()
 # returns the Python version as string 'major.minor.patchlevel'
-print(x)
+print(x, '  platform.python_version')
 
 x=platform.python_implementation()
 # returns a string identifying the Python implementation.
-print(x)
+print(x,'  platform.python_implementation')
 
 x=platform.release()
-print(x)
+print(x, '  platform.release')
 
 x=platform.system()
 # returns the system/OS name, e.g. 'Linux', 'Windows', or 'Java'.
-print(x)
+print(x, '  platform.system')
 
 x=platform.version()
-print(x)
+print(x, '  platform.version')
 
 x=platform.uname()
+print(x,'  platform.uname')
+
+x = dir(platform)
 print(x)
+
+
+
+print('____________________________KONIEC________________________')
