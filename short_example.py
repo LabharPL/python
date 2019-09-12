@@ -142,6 +142,4 @@ print(x,'  platform.uname')
 x = dir(platform)
 print(x)
 
-
-
 print('____________________________KONIEC________________________')
