@@ -61,3 +61,22 @@ tri_recursion(646)
 
 x = lambda a, b, c : a * b * c
 print(x(5, 6, 2))
+
+class MyClass:
+  x = 5
+  w='r'
+p1 = MyClass()
+print(p1.x, 'Moja klasa')
+p = MyClass()
+print(p.w, 'moja klasa drugi parametr')
+
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
