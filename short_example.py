@@ -140,8 +140,23 @@ x=platform.uname()
 print(x,'  platform.uname')
 
 x = dir(platform)
+
 print(x)
 y = locals()
 print('wyswietlowne locals',y)
+
 print('   ')
 print('____________________________KONIEC________________________')
+print('   ')
+
+
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+import datetime
+
+x = datetime.datetime.now()
+
+print(x.month)
+print(x.strftime("%A"))
