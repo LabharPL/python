@@ -58,14 +58,29 @@
 #         print('Success!')
 
 
+#
+# try:
+#   f = open("demofile.txt")
+#   print('tu jest f', f)
+#
+#   f.write("Lorum Ipsum")
+# except:
+#   print("Something went wrong when writing to the file")
+# finally:
+#   f.close()
+#   print("Something else went wrong")
+#
+# print("Enter your name:")
+# x = input()
+# print("Hello ", x)
 
-try:
-  f = open("demofile.txt")
-  print('tu jest f', f)
+#
+# print("Enter your name:")
+# x = raw_input()
+# print("Hello ", x)
 
-  f.write("Lorum Ipsum")
-except:
-  print("Something went wrong when writing to the file")
-finally:
-  f.close()
-  print("Something else went wrong")
+quantity = 3
+itemno = 567
+price = 49
+myorder = "I want {2} pieces of item number {0} for {1:.2f} dollars."
+print(myorder.format(quantity, itemno, price))
