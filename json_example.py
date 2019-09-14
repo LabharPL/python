@@ -79,8 +79,26 @@
 # x = raw_input()
 # print("Hello ", x)
 
-quantity = 3
-itemno = 567
-price = 49
-myorder = "I want {2} pieces of item number {0} for {1:.2f} dollars."
-print(myorder.format(quantity, itemno, price))
+
+# myorder = "I have a {carname}, it is a {model}."
+# print(myorder.format(carname = "Ford", model = "Mustang"))
+
+f = open("demofile.txt", "rt")
+
+print(f.read(122))
+
+
+print('+++++++++++++++++++++++++++++++++')
+
+f = open("demofile.txt", "r")
+for x in f:
+  print(x)
+f.close()
+
+f = open("demofile.txt", "a")
+f.write("Now the file has more content!")
+f.close()
+
+#open and read the file after the appending:
+f = open("demofile.txt", "r")
+print(f.read())
