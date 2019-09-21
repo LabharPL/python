@@ -51,3 +51,23 @@ person1 = {
 # x = len(cars)
 # print ('ilosc');
 # print( x)
+class Person:
+  name = "John"
+  age = 36
+  country = "Norway"
+
+print(dir(Person))
+
+
+x = 'name = "John"\nprint(name)'
+exec(x)
+
+
+import requests
+
+x = requests.head('http://www.onet.pl')
+y = requests.head('http://www.labhar.pl')
+
+
+print(x.headers)
+print(y.headers)

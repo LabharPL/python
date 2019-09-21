@@ -86,10 +86,10 @@ c = serv.cursor()
 
 print('a teraz show')
 
-print c
+print (c)
 print c.execute("SHOW DATABASES")
 
-print c
+print (c)
 
 print('database done')
 
@@ -119,14 +119,14 @@ print('tu sywnik show tables')
 print(x)
 
 
-raw_input("Press Enter to continue...")
+# raw_input("Press Enter to continue...")
 
 
 
 tables = cursor.fetchall()
 print(tables)
 
-cursor.execute("SELECT * FROM temperature")
+cursor.execute("SELECT * FROM test ORDER BY Field DESC LIMIT 15 OFFSET 123456")
 
 
 myresult = cursor.fetchall()
