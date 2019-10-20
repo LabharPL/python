@@ -89,7 +89,7 @@ print('a teraz show')
 print (c)
 print c.execute("SHOW DATABASES")
 
-print (c)
+# print (c)
 
 print('database done')
 
@@ -98,7 +98,7 @@ print l
 l = [ i[0] for i in l ]
 print l
 
-c.execute("select database();")
+# c.execute("select database();")
 
 
 db = lambda(db): mysql.connector.connect(host="s34.linuxpl.com",user="arekh_mqtt",passwd="Lublewo@12",db=db)
