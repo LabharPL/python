@@ -33,18 +33,26 @@ mydb = mysql.connector.connect(
   database="arekh_mqtt"
 )
 
+serv = mysql.connector.connect(
+  host="s34.linuxpl.com",
+  user="arekh_mqtt",
+  passwd="Lublewo@12",
+  # database="arekh_mqtt"
+)
 
-#import config
 
-# mycursor = mydb.cursor()
-#
-# sql = "INSERT INTO test (Field, timestamp) VALUES (%s, %s)"
-# val = ("2", "21")
+
+import config
+
+mycursor = mydb.cursor()
+
+sql = "INSERT INTO test (Field, timestamp) VALUES (%s, %s)"
+val = ("2", "21")
 # mycursor.execute(sql, val)
-#
-# mydb.commit()
-#
-# print(mycursor.rowcount, "record inserted.")
+
+mydb.commit()
+
+print(mycursor.rowcount, "record inserted.")
 
 
 # nowe
@@ -66,50 +74,65 @@ mycursorread.execute("SELECT * FROM test")
 
 myresult = mycursorread.fetchall()
 
+# for x in myresult:
+#   print (x)
+
+
+print(mycursorread.rowcount, "record read.")
+
+print(mydb)
+
+c = serv.cursor()
+
+print('a teraz show')
+
+print (c)
+print c.execute("SHOW DATABASES")
+
+# print (c)
+
+print('database done')
+
+l = c.fetchall()
+print l
+l = [ i[0] for i in l ]
+print l
+
+# c.execute("select database();")
+
+
+db = lambda(db): mysql.connector.connect(host="s34.linuxpl.com",user="arekh_mqtt",passwd="Lublewo@12",db=db)
+
+print(mydb)
+
+mydb = db("arekh_Node-RED-test")
+
+print(mydb)
+
+cursor = mydb.cursor()
+
+
+sqlstring = 'SHOW TABLES;'
+# cursor.execute('USE CustDB')
+x = cursor.execute(sqlstring)
+print('tu sywnik show tables')
+print(x)
+
+
+# raw_input("Press Enter to continue...")
+
+
+
+tables = cursor.fetchall()
+print(tables)
+
+cursor.execute("SELECT * FROM test ORDER BY Field DESC LIMIT 15 OFFSET 123456")
+
+
+myresult = cursor.fetchall()
+
 for x in myresult:
   print (x)
 
-thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(thislist)
-thislist[1] = "blackcurrant"
-print(thislist)
-thisset = {"apple", "banana", "cherry"}
-print(thisset)
+print(cursor.rowcount, "record read.")
 
-a = 33
-b = 200
-if b > a:
-  print("b is greater than a")
-
-a = 33
-b = 33
-if b > a:
-  print("b is greater than a")
-elif a == b:
-  print("a and b are equal")
-
-a = 200
-b = 33
-if b > a:
-    print("b is greater than a")
-elif a == b:
-    print("a and b are equal")
-else:
-    print("a is greater than b")
-
-
-
-# a = 2
-# b = 330
-#
-# print("A") if a > b else print("B")
-
-
-
-cars = ["Ford", "Volvo", "BMW"]
-
-print(cars)
-
-x = len(cars)
-print ('ilosc');
-print( x)
