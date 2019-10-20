@@ -67,3 +67,5 @@ client.send(Message(text="Hi me! It is automat working at: "+now.strftime("%m/%d
 #client.send(Message(text="Hi me!"), thread_id=client.uid, thread_type=ThreadType.USER)
 
 client.logout()
+
+#dopisane
