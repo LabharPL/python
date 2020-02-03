@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../beacom/.idea/beacom.iml" filepath="$PROJECT_DIR$/../beacom/.idea/beacom.iml" />
       <module fileurl="file://$USER_HOME$/czat2/.idea/czat2.iml" filepath="$USER_HOME$/czat2/.idea/czat2.iml" />
       <module fileurl="file://$USER_HOME$/czat3/.idea/czat3.iml" filepath="$USER_HOME$/czat3/.idea/czat3.iml" />
+      <module fileurl="file://$USER_HOME$/ML/python/pylab/.idea/pylab.iml" filepath="$USER_HOME$/ML/python/pylab/.idea/pylab.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python.iml" filepath="$PROJECT_DIR$/.idea/python.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python_rest/.idea/python_rest.iml" filepath="$PROJECT_DIR$/../python_rest/.idea/python_rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sololearn/.idea/sololearn.iml" filepath="$PROJECT_DIR$/../sololearn/.idea/sololearn.iml" />
     </modules>
   </component>
 </project>

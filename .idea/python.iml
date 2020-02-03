@@ -7,6 +7,9 @@
     <orderEntry type="module" module-name="python_rest" />
     <orderEntry type="module" module-name="czat2" />
     <orderEntry type="module" module-name="czat3" />
+    <orderEntry type="module" module-name="pylab" />
+    <orderEntry type="module" module-name="beacom" />
+    <orderEntry type="module" module-name="sololearn" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

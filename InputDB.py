@@ -24,31 +24,42 @@
 # ?>
 
 
+# chat_db = mysql.connector.connect(host="s34.linuxpl.com:3306", user="arek_beacon", passwd="B5@7b~4eJ1~L7%<",
+#                                   database="test")
+
 import mysql.connector
 
 mydb = mysql.connector.connect(
   host="s34.linuxpl.com",
-  user="arekh_mqtt",
-  passwd="Lublewo@12",
-  database="arekh_mqtt"
+  user="arekh_beacon",
+  passwd="B5@7b~4eJ1~L7%<",
+  database="arekh_beacon"
 )
 
 serv = mysql.connector.connect(
   host="s34.linuxpl.com",
-  user="arekh_mqtt",
-  passwd="Lublewo@12",
-  # database="arekh_mqtt"
+  user="arekh_beacon",
+  passwd="B5@7b~4eJ1~L7%<",
+  database="arekh_beacon"
+
+#
+# serv = mysql.connector.connect(
+#   host="s34.linuxpl.com",
+#   user="arekh_mqtt",
+#   passwd="Lublewo@12",
+#   # database="arekh_mqtt"
+
 )
 
 
 
-import config
+# import config
 
 mycursor = mydb.cursor()
 
 sql = "INSERT INTO test (Field, timestamp) VALUES (%s, %s)"
 val = ("2", "21")
-# mycursor.execute(sql, val)
+mycursor.execute(sql, val)
 
 mydb.commit()
 
@@ -96,16 +107,16 @@ print('database done')
 l = c.fetchall()
 print l
 l = [ i[0] for i in l ]
-print l
+# print l
 
-# c.execute("select database();")
+c.execute("select database();")
 
 
-db = lambda(db): mysql.connector.connect(host="s34.linuxpl.com",user="arekh_mqtt",passwd="Lublewo@12",db=db)
+# db = lambda(db): mysql.connector.connect(host="s34.linuxpl.com",user="arekh_mqtt",passwd="Lublewo@12",db=db)
 
 print(mydb)
 
-mydb = db("arekh_Node-RED-test")
+# mydb = db("arekh_Node-RED-test")
 
 print(mydb)
 
